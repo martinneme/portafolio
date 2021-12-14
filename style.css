@@ -8,7 +8,16 @@ body {
     font-size: 16px;
 }
 
+.nombre{
+    display: block;
+    text-align: center;
+   
+}
 
+.profile{
+    padding-top: 1%;
+
+}
 
 .menu {
     display: flex;
@@ -17,7 +26,6 @@ body {
     width: auto;
     justify-content: center;
 }
-
 
 
 .btn{
@@ -35,23 +43,14 @@ body {
     color: black;
 }
 .btn:hover {
-    background-color: #5e5ef5;
-    border-color: #5e5ef5;
+    background-color: #0e76a8;
+    border-color: #0e76a8;
     color: #646262;
 }
 
 
 .card-body{
     color: #f0f0f5; 
-}
-
-.welcome{
-        display: flex;
-        margin-bottom: 1%;
-        border-color: #f0f0f5;
-        border-style: solid;
-        border-radius: 0;
-        color: #8b8b8b;
 }
 
 .redes{

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Poppins:wght@100;400&display=swap');
+
+body {
+    background-color: rgb(0, 0, 0);
+    height: 90vh;
+    font-family: 'Arimo', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: auto;
+    justify-content: center;
+}
+
+
+
+.btn{
+    display: flex;
+    margin-bottom: 1%;
+    border-color: #f0f0f5;
+    border-style: solid;
+    border-radius: 0;
+    color: #8b8b8b;
+}
+
+.btn p{
+    margin: auto;
+    color: black;
+}
+.btn:hover {
+    background-color: #5e5ef5;
+    border-color: #5e5ef5;
+    color: #646262;
+}
+
+
+.card-body{
+    color: #f0f0f5; 
+}
+
+.welcome{
+        display: flex;
+        margin-bottom: 1%;
+        border-color: #f0f0f5;
+        border-style: solid;
+        border-radius: 0;
+        color: #8b8b8b;
+}
+
+.redes{
+    text-align: center;
+}

@@ -56,3 +56,12 @@ body {
 .redes{
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    
+
+.profile{
+    width: 40%;
+}
+
+}

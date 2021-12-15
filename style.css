@@ -53,6 +53,14 @@ body {
     color: #f0f0f5; 
 }
 
+.card-text,.card-title{
+    color: black;
+}
+
+.destacada{
+    background-color: #bff7bf;
+}
+
 .redes{
     text-align: center;
 }

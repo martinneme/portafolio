@@ -18,20 +18,11 @@
             <img class="profile" src="img/profile.svg" width="13%">
             <img class="container" src="img/nombreApellido.svg" width="50%">
         </div>
-        <div id="accordion">
-
-            <buttom class="btn btn-light welcome" data-toggle="collapse" data-target="#Home" aria-expanded="false"
-                aria-controls="Home">
-                <p>Bienvenido</p>
-            </buttom>
-            <div id="Home" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                    Antes que nada, gracias por visitar mi sitio. Este es mi portafolio, mi curriculum 2.0 el cual
-                    pretendo que sea mi carta de presentación
-                    y te brinde la informacion que necesitas en pos de que podamos trabajar juntos. Comencemos!
+        
+                <div id="welc" class="welcome container card-body">
+                    Gracias por visitar mi sitio. Este es mi portafolio, ingresa el PIN y Comencemos!
                 </div>
-            </div>
-        </div>
+          
 
     </header>
     <main id="main" style="display:none">
@@ -177,6 +168,7 @@
           let cod =  prompt("Debes ingresar el codigo brindado");
      if(cod == '1008'){
               document.querySelector("#main").removeAttribute("style");
+              document.querySelector("#welc").setAttribute("style","display:none;");
           }
           else{
               alert("Codigo Incorrecto");

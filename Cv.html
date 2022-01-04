@@ -18,11 +18,11 @@
             <img class="profile" src="img/profile.svg" width="13%">
             <img class="container" src="img/nombreApellido.svg" width="50%">
         </div>
-        
-                <div id="welc" class="welcome container card-body">
-                    Gracias por visitar mi sitio. Este es mi portafolio, ingresa el PIN y Comencemos!
-                </div>
-          
+
+        <div id="welc" class="welcome container card-body">
+            Gracias por visitar mi sitio. Este es mi portafolio, ingresa el PIN y Comencemos!
+        </div>
+
 
     </header>
     <main id="main" style="display:none">
@@ -34,13 +34,59 @@
                     <p>Sobre mi</p>
                 </buttom>
                 <div id="SobreMi" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                    <div class="card-body">
-                        Actualmente soy Tester QA Manual, y me encuentro en proceso de aprendizaje de tecnicas de
-                        automatizacion en el campo.
-                        Estoy cursando en Coder House la carrera de Full Stack Developer. Cada dia trabajo para
-                        capacitarme y crecer personal y profesionalmente
-                        en las diferentes ramas de la tecnologia. El desafio y la posibilidad de crecimiento son unas de
-                        las oportunidades en las que mas intereso.
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Presentación</h5>
+                            <p class="card-text">Actualmente soy Tester QA Manual, y me encuentro en proceso de
+                                aprendizaje de técnicas de
+                                automatización en el campo.
+                                Estoy cursando en Coder House la carrera de Full Stack Developer. Cada día trabajo
+                                para
+                                capacitarme y crecer personal y profesionalmente
+                                en las diferentes tecnologías. El desafío y la posibilidad de crecimiento son unas
+                                de
+                                las oportunidades en las que más me intereso.</p>
+                        </div>
+                    </div>
+                    <div class="card-group">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Edad</h5>
+                                <p class="card-text">26</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Idioma</h5>
+                                <p class="card-text">Ingles</p>
+                                <p class="card-text">Nivel intermedio</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Donde vivo</h5>
+                                <p class="card-text">Sarandí,Avellaneda,Buenos Aires.</p>
+
+                                <div id="accordio">
+                                    <buttom class="btn btn-light" data-toggle="collapse" data-target="#mapa"
+                                        aria-expanded="false" aria-controls="mapa">
+                                        <p>Mapa</p>
+                                    </buttom>
+                                    <div id="mapa" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordio">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <iframe
+                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13123.67224270387!2d-58.355181157085205!3d-34.6820174418428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3330c4228289f%3A0xb698f582838b673d!2sSarand%C3%AD%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1641306686037!5m2!1ses!2sar"
+                                                    width="400" height="300" style="border:0;" allowfullscreen=""
+                                                    loading="lazy"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <buttom class="btn btn-light" data-toggle="collapse" data-target="#Educacion" aria-expanded="false"
@@ -58,7 +104,8 @@
                         </div>
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title">Diplomatura en Seguridad de la informacion y Ethical Hacking</h5>
+                                <h5 class="card-title">Diplomatura en Seguridad de la informacion y Ethical Hacking
+                                </h5>
                                 <p class="card-text">Universidad Tecnologica Nacional- UTN</p>
                                 <p class="card-text"><small class="text-muted">2018</small></p>
                             </div>
@@ -100,8 +147,10 @@
                                 <p class="card-text">GBCA</p>
                                 <p class="card-text">Responsabilidades</p>
                                 <p class="card-text">
-                                    Brindar soporte técnico informático a las diferentes sedes y sub-sedes comunales y
-                                    otras áreas del Gobierno de la Ciudad de Buenos Aires, tales como la Subsecretaria
+                                    Brindar soporte técnico informático a las diferentes sedes y sub-sedes comunales
+                                    y
+                                    otras áreas del Gobierno de la Ciudad de Buenos Aires, tales como la
+                                    Subsecretaria
                                     de
                                     Gestión Comunal, realizando actividades que formen parte del mantenimiento y
                                     fortalecimiento del parque informático, participando así también en el ciclo de
@@ -131,7 +180,8 @@
                                 <p class="card-text">Responsabilidades</p>
                                 <p class="card-text">
                                     Asegurar mediante el diseño y ejecución integral de pruebas, la calidad del
-                                    producto, garantizando no solo la funcionalidad esperada si no tambien que cumple
+                                    producto, garantizando no solo la funcionalidad esperada si no tambien que
+                                    cumple
                                     con las necesidades.</p>
                                 <p class="card-text"><small class="text-muted">2019 - Actualmente</small></p>
                             </div>
@@ -163,19 +213,16 @@
         integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
     </script>
     <script>
-        
-        function pedirCodigo(){
-          let cod =  prompt("Debes ingresar el codigo brindado");
-     if(cod == '1008'){
-              document.querySelector("#main").removeAttribute("style");
-              document.querySelector("#welc").setAttribute("style","display:none;");
-          }
-          else{
-              alert("Codigo Incorrecto");
-              pedirCodigo();
-          }
-                }
-
+        function pedirCodigo() {
+            let cod = prompt("Debes ingresar el codigo brindado");
+            if (cod == '1008') {
+                document.querySelector("#main").removeAttribute("style");
+                document.querySelector("#welc").setAttribute("style", "display:none;");
+            } else {
+                alert("Codigo Incorrecto");
+                pedirCodigo();
+            }
+        }
     </script>
 </body>
 

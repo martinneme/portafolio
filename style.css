@@ -79,6 +79,16 @@ body {
     background-color: white;
     
 }
+.contact{
+    display: flex;
+   justify-content: right;
+   
+}
+.btnContact{
+    border-radius: 4px;
+    background-color: white;
+    width: 10%;
+}
 
 .btnMas:hover {
     color: white;

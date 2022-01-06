@@ -8,17 +8,17 @@ body {
     font-size: 16px;
 }
 
-.welcome{
+.welcome {
     text-align: center;
 }
 
-.nombre{
+.nombre {
     display: block;
     text-align: center;
-   
+
 }
 
-.profile{
+.profile {
     padding-top: 1%;
 
 }
@@ -32,7 +32,7 @@ body {
 }
 
 
-.btn{
+.btn {
     display: flex;
     margin-bottom: 0;
     margin-top: 10px;
@@ -44,54 +44,98 @@ body {
 
 }
 
-.btn p{
+.btn p {
     margin: auto;
     color: black;
 }
+
 .btn:hover {
     background-color: #0e76a8;
     border-color: #0e76a8;
     color: #646262;
-    
+
 }
 
-.card-body{
+.card-body {
     color: #f0f0f5;
-    
+
 }
 
-.card-text,.card-title{
+.card-text,
+.card-title {
     color: black;
 }
 
-.destacada{
+.destacada {
     background-color: #bff7bf;
 }
 
-.redes{
+.redes {
     text-align: center;
+}
+
+.btnMas {
+
+    border-radius: 4px;
+    background-color: white;
+    height: 35px;
+}
+
+.btnMas:hover {
+    color: white;
+    background-color: black;
+}
+
+.btnmap{
+    width: 100%;
+   justify-content: center;
+}
+.btnmap:hover {
+    color: white;
+    border-color: black;
+    background-color: BLACK;
+    animation: width-scale 3s;
+}
+
+
+
+@keyframes width-scale {
+    0% {
+        width: 100%;
+        
+    }
+    100% {
+      width: 65%;
+    
+    }
+  }
+  
+
+.modal-title,
+.list-group {
+    color: black;
 }
 
 
 @media (max-width: 768px) {
-    
 
-.profile{
-    width: 40%;
-}
 
-.btn{
- 
-    padding: 10%;
-}
+    .profile {
+        width: 40%;
+    }
 
-.linkedin{
-    margin: 20%;
-}
+    .btn {
 
-.redes{
-    padding-top: 15%;
-}
+        padding: 10%;
+    }
+
+    .linkedin {
+        margin: 20%;
+    }
+
+    .redes {
+        padding-top: 15%;
+    }
 
 
 }

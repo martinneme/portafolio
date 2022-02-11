@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./js/bootstrap.js"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Cv Martin Neme</title>
 </head>
 
-<body onload="pedirCodigo()">
+<body onload="pedirDatos()">
     <header>
         <div class="container nombre">
-            <img class="profile" src="img/profile.svg" width="13%">
-            <img class="container" src="img/nombreApellido.svg" width="50%">
+            <img class="profile" src="img/profile.svg" width="13%" alt="Imagen de perfil">
+            <img class="container" src="img/nombreApellido.svg" width="50%" alt="Martin Neme">
         </div>
 
         <div id="welc" class="welcome container card-body">
@@ -24,22 +25,58 @@
         </div>
         <div id="panelSaludo" class="container card-body">
         </div>
-        
 
     </header>
+    <section>
+        <!-- Modal  WELCOME-->
+
+        <div class="modal fade" id="welcomeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Hola!</h5>
+
+
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Codigo:</label>
+                                <input type="text" class="form-control" id="codigo">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="submit" type="button" class="btn btn-primary">Ingresar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END Modal  WELCOME-->
+    </section>
     <main id="main" style="display:none">
-        <div class="container-fluid  menu">
+
+        <div class="container-fluid  menu" role="Menu acordeon">
 
             <div id="accordion">
-                <buttom class="btn btn-light" data-toggle="collapse" data-target="#SobreMi" aria-expanded="false"
-                    aria-controls="SobreMi">
-                    <p>Sobre mi</p>
+                <buttom class="btn btn-light" style="font-weight: bolder;" data-toggle="collapse" data-target="#SobreMi"
+                    aria-expanded="false" aria-controls="SobreMi">
+                    Sobre mi
+
                 </buttom>
                 <div id="SobreMi" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Presentación</h5>
-                            <p id="Presentación" class="card-text">Actualmente soy Tester QA Manual y me encuentro en proceso de
+                            <p id="Presentación" class="card-text">Actualmente soy Tester QA Manual y me encuentro en
+                                proceso de
                                 aprendizaje de técnicas de
                                 automatización en el campo.
                                 Estoy cursando en Coder House la carrera de Full Stack Developer. Cada día trabajo
@@ -100,9 +137,9 @@
                         </div>
                     </div>
                 </div>
-                <buttom class="btn btn-light" data-toggle="collapse" data-target="#Educacion" aria-expanded="false"
-                    aria-controls="Educacion">
-                    <p>Educacion</p>
+                <buttom class="btn btn-light" style="font-weight: bolder;" data-toggle="collapse"
+                    data-target="#Educacion" aria-expanded="false" aria-controls="Educacion">
+                    Educacion
                 </buttom>
                 <div id="Educacion" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-group">
@@ -145,9 +182,9 @@
                     </div>
                 </div>
             </div>
-            <buttom class="btn btn-light" data-toggle="collapse" data-target="#Experiencia" aria-expanded="false"
-                aria-controls="Experiencia">
-                <p>Experiencia</p>
+            <buttom class="btn btn-light btn" style="font-weight: bolder;" data-toggle="collapse"
+                data-target="#Experiencia" aria-expanded="false" aria-controls="Experiencia">
+                Experiencia
             </buttom>
             <div id="Experiencia" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
 
@@ -221,7 +258,7 @@
                                                 <li class="list-group-item">WebdriverIO</li>
                                                 <li class="list-group-item">Js/Typescript</li>
                                                 <li class="list-group-item">Cucumber</li>
-                                                <li class="list-group-item">Gherkins</li>
+                                                <li class="list-group-item">Gherkin</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -238,8 +275,9 @@
     </main>
     <footer class="container-fluid">
         <section class="container redes">
-            <a href="https://www.linkedin.com/in/martinneme"><img class="Linkedin" src="img/Linkedin.png"
-                    width="10%"></a>
+            <a href="https://www.linkedin.com/in/martinneme" alt="Linkedin"><img class="Linkedin" src="img/Linkedin.png"
+                    width="10%" tag="link a Linkedin"></img>
+            </a>
             <p>Te espero!</p>
         </section>
 
@@ -258,19 +296,80 @@
     </script>
     <script>
         function pedirCodigo() {
-            let cod = prompt("Debes ingresar el codigo brindado");
+            var cod = '1008'; //prompt("Debes ingresar el codigo brindado");
             if (cod == '1008') {
-                var name = prompt("Nombre");
+                //var name = prompt("Nombre");
                 document.querySelector("#main").removeAttribute("style");
                 document.querySelector("#welc").setAttribute("style", "display:none;");
-                var welcome = "Hola "+name+"!";
-                document.querySelector("#panelSaludo").innerHTML= welcome;
-                
-                
+                var welcome = "Hola " + name + "!";
+                document.querySelector("#panelSaludo").innerHTML = welcome;
+
+
             } else {
                 alert("Codigo Incorrecto");
                 pedirCodigo();
             }
+        }
+    </script>
+
+    <script>
+        function pedirDatos() {
+            var modalWelcome = document.querySelector("#welcomeModal");
+            $("#welcomeModal").modal("show");
+
+            
+
+
+        };
+
+        var cod = document.querySelector("#codigo");
+        cod.setAttribute("type", "password");
+
+        cod.addEventListener('blur', (e) => {
+
+            var codigo = e.target.value
+            
+            if (codigo.length < 4) {
+             
+                cod.setAttribute("style", "color:red");
+                window.alert("Ingresa la clave");
+            } else {
+
+                const ke = new KeyboardEvent("keydown", {
+                    keyCode: 13
+                });
+                document.body.dispatchEvent(ke);
+
+                if (codigo == '1008') {
+                    document.querySelector("#codigo")
+                    cod.setAttribute("style", "color:green");
+                    submit(1);
+
+                }else{
+                    window.alert("Ingresa la clave");ñ
+                }
+            }
+        });
+
+        function submit(val) {
+            if (val = 1) {
+                var enviar = document.querySelector("#submit");
+                enviar.addEventListener("click", () => {
+                    var name = document.querySelector("#name").textContent;
+                    $("#welcomeModal").modal("hide");
+                    mainEnable(name);
+                })
+            }
+
+        }
+
+
+        function mainEnable(name) {
+            document.querySelector("#main").removeAttribute("style");
+            document.querySelector("#welc").setAttribute("style", "display:none;");
+            console.log("ya deberia haber cambiado el display");
+            var welcome = "Hola " + name + "!";
+            document.querySelector("#panelSaludo").innerHTML = welcome;
         }
     </script>
 </body>

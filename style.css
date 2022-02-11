@@ -39,20 +39,19 @@ body {
     border-color: #f0f0f5;
     border-style: solid;
     border-radius: 0;
-    color: #8b8b8b;
-    padding: 1%;
-
-}
-
-.btn p {
-    margin: auto;
     color: black;
+    padding: 1%;
+    justify-content: center;
+
 }
 
-.btn:hover {
+
+
+.btn:hover{
+    justify-content: center;
     background-color: #0e76a8;
     border-color: #0e76a8;
-    color: #646262;
+    color: white;
 
 }
 
@@ -70,8 +69,11 @@ body {
     background-color: #bff7bf;
 }
 
+
+
 .redes {
     text-align: center;
+    color:white;
 }
 
 .btnMas {

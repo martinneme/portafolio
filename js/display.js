@@ -15,7 +15,7 @@ cod.addEventListener('blur', (e) => {
     if (codigo.length < 4) {
 
         cod.setAttribute("style", "color:red");
-        window.alert("Ingresa la clave");
+        window.alert("Clave incorrecta, reintente");
     } else {
 
         const ke = new KeyboardEvent("keydown", {
@@ -29,7 +29,7 @@ cod.addEventListener('blur', (e) => {
             submit(1);
 
         } else {
-            window.alert("Ingresa la clave");
+            window.alert("Clave incorrecta, reintente");
             
         }
     }
